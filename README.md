@@ -16,6 +16,12 @@ If you don't use "twentynineteen" as your theme, change the variable $theme in p
 Add your API key in $apikey in page-heroes.php as well as functions.php
 In your wordpress interface, add a page named "heroes".
 
+## Geocoding
+Geocoding is done in the functions.php file, every time a user updates its location or registers with a location we send this to the google geolocate api. It spits back some coordinates (hopefully) and those are stored in the database with the users metadata.
+
+## Mapping
+Mapping is done in a special page template. You can name these whatever you want, the pagename just needs to correlate with the template name. In our case "heroes". We look for all users with geocoded location data, put them in an array, send it over to JS and ultimately let google build the map. Different graphics can be used for different members.
+
 ## Troubleshooting, Bugs, and Feedback
 + To report a bug, please [GitHub Issues](https://github.com/michaelpollak/ultimate-member-map/issues).
 + To provide feedback, please use the [GitHub Issues](https://github.com/michaelpollak/ultimate-member-map/issues).
