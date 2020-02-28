@@ -1,5 +1,6 @@
 # ultimate-member-map
 ![Wordpress Users on a Geolocated on a Google Maps Map](https://raw.githubusercontent.com/michaelpollak/ultimate-member-map/master/SCREENSHOT_ultimate-member-map.png)
+
 Geocode and display a number of Wordpress users on a map using the Google Maps API.
 The usecase was a school [hakwt.at](http://hakwt.at/) that wanted to display where graduates are working and living. We set up a wordpress site and added [ultimate member](https://ultimatemember.com) as the social media plugin. We did not find a smart solution to geocode users with the Google Maps API and show them on a map. So we built this. I hope this helps somebody else out.
 
