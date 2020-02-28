@@ -27,7 +27,7 @@ function geocode_hero( $submitted ) {
     }
 
     // Call the Google Maps API to geocode location, see https://developers.google.com/maps/documentation/geocoding/intro?hl=de .
-    $response = file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address=' . urlencode($location) . '&region=at&key=AIzaSyADpAfoc-YYu09kxshs5DqFlB4ndCZyZRs');
+    $response = file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address=' . urlencode($location) . '&region=at&key=' . $apikey);
     $response = json_decode($response);
 
     // Ignore in case google cant geocode location.
